@@ -8,7 +8,7 @@ int main()
 {
 
     Chef chef("Jyrki");
-    ItalianChef italianchef("Mario");
+    ItalianChef italianchef("Mario", 250, 100);
 
 
     chef.makeSalad();
