@@ -13,7 +13,7 @@ int main()
 
     chef.makeSalad();
     chef.makeSoup();
-    italianchef.makePasta(250, 100);
+    italianchef.makePasta();
 
     return 0;
 }
