@@ -8,7 +8,7 @@ using namespace std;
 class ItalianChef: public Chef
 {
 public:
-    ItalianChef(string chefName);
+    ItalianChef(string chefName, int, int);
     ~ItalianChef();
 
     string getName();

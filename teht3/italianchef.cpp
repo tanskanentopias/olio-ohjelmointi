@@ -3,9 +3,10 @@
 
 using namespace std;
 
-ItalianChef::ItalianChef(string chefName) : Chef(chefName)
+ItalianChef::ItalianChef(string chefName, int j, int v) : Chef(chefName)
 {
-
+    jauhot = j;
+    vesi = v;
     cout << "Chef " << getName() << " konstruktori" << endl;
 }
 
