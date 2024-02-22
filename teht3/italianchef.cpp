@@ -20,10 +20,8 @@ string ItalianChef::getName()
     return name;
 }
 
-void ItalianChef::makePasta(int j, int v)
+void ItalianChef::makePasta()
 {
-    vesi = v;
-    jauhot = j;
     cout << "Chef " << getName() << " makes pasta with special recipe" << endl;
     cout << getName() << " uses jauhot = " << jauhot << endl;
     cout << getName() << " uses vesi = " << vesi << endl;
