@@ -23,13 +23,8 @@ public slots:
 
 private slots:
     void updateProgressBar();
+
     void setGameInfoText(QString, short);
-
-    void slotShowTimer();
-
-    void on_player1TimeBar_valueChanged(int value);
-
-    void on_player2TimeBar_valueChanged(int value);
 
     void on_btnSwitchPlayer1_clicked();
 
@@ -47,14 +42,9 @@ private:
     Ui::MainWindow *ui;
     QTimer *gameTimer;
 
-    short player1Time=100;
-    short player2Time=100;
-    short gameTime=100;
+    short player1Time;
+    short player2Time;
+    short gameTime;
     short currentPlayer;
-
-
-
-
-
 };
 #endif // MAINWINDOW_H
