@@ -35,15 +35,16 @@ void MainWindow::on_btnSwitchPlayer2_clicked()
 
 void MainWindow::on_btnGameTime120sec_clicked()
 {
+
     player1Time=120;
     player2Time=120;
 
     ui->player1TimeBar->setValue(100);
-    ui->player1TimeBar->setMaximum(120);
+    ui->player1TimeBar->setMaximum(player1Time);
     ui->player1TimeBar->setMinimum(0);
 
     ui->player2TimeBar->setValue(100);
-    ui->player2TimeBar->setMaximum(120);
+    ui->player2TimeBar->setMaximum(player2Time);
     ui->player2TimeBar->setMinimum(0);
 
     ui->labelGameInfo->setText("Game time set to 120 seconds. Ready to Start!");
@@ -52,15 +53,16 @@ void MainWindow::on_btnGameTime120sec_clicked()
 
 void MainWindow::on_btnGameTime5min_clicked()
 {
+
     player1Time=300;
     player2Time=300;
 
     ui->player1TimeBar->setValue(100);
-    ui->player1TimeBar->setMaximum(300);
+    ui->player1TimeBar->setMaximum(player1Time);
     ui->player1TimeBar->setMinimum(0);
 
     ui->player2TimeBar->setValue(100);
-    ui->player2TimeBar->setMaximum(300);
+    ui->player2TimeBar->setMaximum(player2Time);
     ui->player2TimeBar->setMinimum(0);
 
     ui->labelGameInfo->setText("Game time set to 5 minutes. Ready to Start!");
@@ -121,8 +123,8 @@ void MainWindow::updateProgressBar()
 }
 
 
-void MainWindow::setGameInfoText(QString, short)
+/*void MainWindow::setGameInfoText(QString, short)
 {
 
-}
+}*/
 

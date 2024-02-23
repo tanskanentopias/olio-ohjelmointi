@@ -24,7 +24,7 @@ public slots:
 private slots:
     void updateProgressBar();
 
-    void setGameInfoText(QString, short);
+   // void setGameInfoText(QString, short);
 
     void on_btnSwitchPlayer1_clicked();
 
